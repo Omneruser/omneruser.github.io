@@ -1,0 +1,55 @@
+/* Omner Allen
+CSS file for my Resume
+*/
+
+ header {
+    border-bottom: solid 2px black;
+    text-align: center;
+    list-style-type: none;
+}
+ul{list-style-type:none; margin: auto;padding: auto;}
+p{width: auto; height: auto;
+text-align: center;
+}
+body{background: turquoise;}
+
+section{
+    display: grid;
+    grid-template-areas: 
+    "Employment Education";
+    width: auto;
+    height: auto;
+    
+  border: 5px solid silver;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+}
+
+section.Employment,Section.Education, Section.Profile{
+    /* display: grid
+    'Employment Education'; */
+    background-color: powderblue;
+}
+section.Employment,section.Education{
+    height: 15em;
+}
+@media screen and (min-width: 59em) {
+    #Grid {
+        display: grid;
+        grid-template-rows: auto;
+        width: auto;
+        height: auto;
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+   
+@media screen and (orientation: landscape) {  body {     background:rgb(243, 228, 243)}}
+@media screen and (orientation: portrait) {  body {    background: rgb(156, 154, 153);    }}
+
+
+
+/*
+here are my comments for this thing. I might or might not use them a lot.
+*/
